@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+add_a_user()
+{
+  USER=$1
+  PASSWORD=$2
+  shift; shift;
+ 
+  echo "Adding user $USER ..."
+  echo passwd $USER $PASSWORD
+ 
+}
+
+echo "Start of script..."
+add_a_user bob  presenter
+add_a_user fred singer
+add_a_user bilk model
+echo "End of script..."
